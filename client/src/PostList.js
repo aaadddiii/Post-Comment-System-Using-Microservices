@@ -12,7 +12,7 @@ export default () => {
       setPosts(res.data);
     };
     useEffect(() =>{
-        fetchPosts();
+        fetchPosts(); 
     },[]);
     const renderedPost = Object.values(posts).map(post =>{
         return <div className="card" style={{ width:'30%', marginBottom:'20px' }}
